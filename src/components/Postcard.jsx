@@ -1,25 +1,37 @@
 import { Link } from "react-router-dom";
 
-function PostCard({ $id, title, featureImage }) {
+function PostCard({ $id, title, content }) {
+  const generatePreview = (htmlContent = "") => {
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = htmlContent;
+    const plainText = tempDiv.textContent || tempDiv.innerText || "";
+    return plainText.length > 120 ? plainText.slice(0, 120) + "..." : plainText;
+  };
+
   return (
-    <Link to={`/post/${$id}`}>
-      <div className="w-full bg-gray-100 rounded-xl p-4">
-        <div className="w-full justify-center mb-4">
-          {featureImage ? (
-            <img
-              src={appwriteService.getFilePreview(featureImage)}
-              alt={title}
-              className="rounded-xl"
-            />
-          ) : (
-            <div className="w-full h-40 bg-gray-300 rounded-xl flex items-center justify-center">
-              <span className="text-gray-600">No image</span>
-            </div>
-          )}
+    <Link to={`/post/${$id}`} className="h-full">
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm 
+                      hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
+        
+        {/* Title */}
+        <h2 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-1">
+          {title}
+        </h2>
+        
+        {/* Content Preview */}
+        <p className="text-sm text-gray-600 flex-grow line-clamp-3">
+          {generatePreview(content)}
+        </p>
+
+        {/* Read More Button */}
+        <div className="mt-4">
+          <span className="inline-block text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+            Read more →
+          </span>
         </div>
-        <h2 className="text-xl font-bold">{title}</h2>
       </div>
     </Link>
   );
 }
-export default PostCard
+
+export default PostCard;

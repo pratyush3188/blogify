@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import { AuthLayout, Login } from './components/index.js'
 
-
+import Aboutus from './pages/Aboutus.jsx'
 import AddPost from "./pages/Addpost.jsx";
 import Signup from './pages/Signup'
 import EditPost from "./pages/Editpost.jsx";
@@ -32,6 +32,14 @@ const router = createBrowserRouter([
                 <AuthLayout authentication={false}>
                     <Login />
                 </AuthLayout>
+            ),
+        },
+         {
+            path: "/aboutus",
+            element: (
+                
+                    <Aboutus />
+                
             ),
         },
         {
