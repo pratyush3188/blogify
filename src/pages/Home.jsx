@@ -48,7 +48,7 @@ function Home() {
         </h1>
         <div className="text-left">
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Aurora Blog is a community where anyone can write, read, and grow. 
+          Blogify is a community where anyone can write, read, and grow. 
           Create an account to start posting your blogs and connect with readers.
         </p>
         <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ function Home() {
           <div className="p-6 border rounded-xl text-left shadow-sm hover:shadow-md transition">
             <h3 className="font-semibold text-lg">Write freely</h3>
             <p className="mt-2 text-gray-600 text-sm">
-              Create posts with a clean, focused writing experience. Aurora keeps 
+              Create posts with a clean, focused writing experience. Blogify keeps 
               your work safe while you focus on your ideas.
             </p>
           </div>
@@ -104,7 +104,7 @@ function Home() {
         <div className="text-left">
           <h2 className="flex items-center gap-2 text-2xl font-bold">
             <Sparkles className="text-purple-600 w-6 h-6" />
-            Why writers choose Aurora
+            Why writers choose Blogify
           </h2>
           <p className="mt-3 text-gray-600">
             Elegant design, fast loading pages, and an editor that lets your words shine. 
@@ -144,7 +144,7 @@ function Home() {
         </h1>
         <div className="text-left">
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Aurora Blog is a community where anyone can write, read, and grow. 
+          Blogify is a community where anyone can write, read, and grow. 
           Create an account to start posting your blogs and connect with readers.
         </p>
         <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
@@ -169,7 +169,7 @@ function Home() {
           <div className="p-6 border rounded-xl text-left shadow-sm hover:shadow-md transition">
             <h3 className="font-semibold text-lg">Write freely</h3>
             <p className="mt-2 text-gray-600 text-sm">
-              Create posts with a clean, focused writing experience. Aurora keeps 
+              Create posts with a clean, focused writing experience. Blogify keeps 
               your work safe while you focus on your ideas.
             </p>
           </div>
@@ -200,7 +200,7 @@ function Home() {
         <div className="text-left">
           <h2 className="flex items-center gap-2 text-2xl font-bold">
             <Sparkles className="text-purple-600 w-6 h-6" />
-            Why writers choose Aurora
+            Why writers choose Blogify
           </h2>
           <p className="mt-3 text-gray-600">
             Elegant design, fast loading pages, and an editor that lets your words shine. 

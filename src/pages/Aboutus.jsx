@@ -33,9 +33,9 @@ function Aboutus() {
         
         {/* Header Section */}
         <section className="text-left mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Aurora Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Blogify</h1>
           <p className="text-lg text-left text-gray-600 max-w-3xl ">
-            Aurora Blog is a modern publishing platform crafted for simplicity and creativity. Whether you want to share quick thoughts or deep essays, our editor and clean design help your words shine.
+            Blogify is a modern publishing platform crafted for simplicity and creativity. Whether you want to share quick thoughts or deep essays, our editor and clean design help your words shine.
           </p>
         </section>
 
@@ -103,8 +103,8 @@ function Aboutus() {
              <h2 className="text-3xl font-bold text-gray-900">FAQs</h2>
           </div>
           <div className="border-t border-gray-200">
-            <FaqItem question="Is Aurora Blog free to use?">
-              <p>Yes, Aurora Blog is completely free for all writers and readers. Our mission is to make publishing accessible to everyone.</p>
+            <FaqItem question="Is Blogify free to use?">
+              <p>Yes, Blogify is completely free for all writers and readers. Our mission is to make publishing accessible to everyone.</p>
             </FaqItem>
             <FaqItem question="Can I edit posts after publishing?">
               <p>Absolutely! You can edit and update your posts at any time. Your content is yours to manage as you see fit.</p>
