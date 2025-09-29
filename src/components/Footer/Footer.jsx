@@ -43,7 +43,7 @@ function Footer() {
             {/* Brand section */}
             <div className="lg:col-span-2 space-y-6">
               <div className="text-2xl font-medium tracking-tight">
-                Editorial
+                Blogify
               </div>
 
               <p className="text-muted-foreground max-w-md">
@@ -122,7 +122,7 @@ function Footer() {
           {/* Bottom section */}
           <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Editorial. All rights reserved.
+              © {currentYear} Blogify. All rights reserved.
             </p>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
