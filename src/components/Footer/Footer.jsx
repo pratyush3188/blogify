@@ -34,7 +34,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="text-left border-t border-border bg-muted/30">
+    <footer className="text-left border-t border-border bg-white">
       <div className="precision-grid">
         <div className="py-16">
           {/* Main footer content */}
