@@ -7,28 +7,37 @@ function AllPosts() {
 
   useEffect(() => {
     appwriteService.getPosts()
-      .then((posts) => {
-        console.log("Fetched posts in AllPosts 👉", posts); // ✅ Debug
-        setPosts(posts); // posts is already an array
+      .then((fetchedPosts) => {
+        if (fetchedPosts) {
+          setPosts(fetchedPosts);
+        }
       })
       .catch((err) => {
         console.error("Error fetching posts:", err);
-        setPosts([]);
       });
   }, []);
 
   return (
-    <div className="w-full py-8">
+    <div className="w-full py-16 bg-gray-50 min-h-screen">
       <Container>
-        <div className="flex flex-wrap">
-          {posts.length > 0 ? (
+        {/* Header Section */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">✨ All Posts</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore community posts, thoughts, and stories from our members.
+          </p>
+        </div>
+
+        {/* Posts Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {posts && posts.length > 0 ? (
             posts.map((post) => (
-              <div key={post.$id} className="p-2 w-1/4">
-                <PostCard {...post} />
-              </div>
+              <PostCard key={post.$id} {...post} />
             ))
           ) : (
-            <p className="text-center w-full">No posts found 🚫</p>
+            <div className="col-span-full text-center py-12">
+              <p className="text-lg text-gray-500">📭 No posts found yet.</p>
+            </div>
           )}
         </div>
       </Container>
