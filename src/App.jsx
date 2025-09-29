@@ -23,6 +23,8 @@ function App() {
   }, [dispatch])
 
   return !loading ? (
+    <div>
+      
     <div className="min-h-screen flex flex-col bg-gray-200 text-black overflow-x-hidden">
   <Header />
   <main className="flex-1">
@@ -30,6 +32,7 @@ function App() {
   </main>
   <Footer />
 </div>
+    </div>
 
   ) : null
 }
