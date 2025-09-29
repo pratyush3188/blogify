@@ -119,7 +119,7 @@ function Aboutus() {
         <section className="text-center bg-gray-50 p-10 rounded-lg">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Join the community</h2>
           <p className="text-gray-600 mb-6">Ready to share your story? Create an account and publish your first post today.</p>
-          <Link to='/signup' className="bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-purple-700 transition duration-300">
+          <Link to='/add-post' className="bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-purple-700 transition duration-300">
             Get started
           </Link>
         </section>

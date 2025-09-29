@@ -154,10 +154,10 @@ function Home() {
 
         {/* Buttons */}
         <div className="mt-6 flex justify-center gap-4">
-          <Link to='/signup' className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+          <Link to='/add-post' className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
             Get started
           </Link>
-          <Link to='/signup' className="border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          <Link to='/aboutus' className="border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
             Learn more
           </Link>
         </div>

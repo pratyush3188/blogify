@@ -1,6 +1,7 @@
 "use client";
 
 import { Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,10 +28,10 @@ function Footer() {
   };
 
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "Github" }
+    { icon: Twitter, to: "#", label: "Twitter" },
+    { icon: Instagram, to: "#", label: "Instagram" },
+    { icon: Linkedin, to: "https://www.linkedin.com/in/pratyush-sharma-65816531b/", label: "LinkedIn" },
+    { icon: Github, to: "https://github.com/pratyush3188/blogify", label: "Github" }
   ];
 
   return (
@@ -53,14 +54,15 @@ function Footer() {
               {/* Social links */}
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
-                  <a
+                  <Link
+                  target="__blank"
                     key={index}
-                    href={social.href}
+                    to={social.to}
                     className="p-2 hover:bg-background/50 transition-colors duration-200 border border-border hover:border-primary"
                     aria-label={social.label}
                   >
                     <social.icon className="w-4 h-4" />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -71,12 +73,12 @@ function Footer() {
               <ul className="space-y-3">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -88,12 +90,12 @@ function Footer() {
               <ul className="space-y-3">
                 {footerLinks.content.map((link, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -105,12 +107,12 @@ function Footer() {
               <ul className="space-y-3">
                 {footerLinks.legal.map((link, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
